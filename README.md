@@ -36,6 +36,8 @@ Dialogue history-based hallucinations occur when an LLM mixes up names or relati
 **How do you stop hallucinations in LLM?**
 You cannot eliminate LLM hallucinations. However, the most effective way to minimize hallucination is outside the LLM itself. Specifically, you can build or use a chatbot that deploys Retrieval Augmented Generation (RAG). RAG provides more context around the question to generate a more relevant and accurate answer.
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQThAgLJvknsrJMG7v6hTqCWDiJCe-scQ53bw&usqp=CAU)
+
 **What is data leakage in LLM?**
 Description: Data leakage occurs when an LLM accidentally reveals sensitive information, proprietary algorithms, or other confidential details through its responses.
 
@@ -47,12 +49,14 @@ Data leakage occurs when an LLM accidentally reveals sensitive information, prop
 - Incomplete or improper filtering of sensitive information in the LLM’s responses.
 - Overfitting or memorization of sensitive data in the LLM’s training process.
 - Unintended disclosure of confidential information due to LLM misinterpretation or errors.
+  
 **How to Prevent:**
 
 - Implement strict output filtering and context-aware mechanisms to prevent the LLM from revealing sensitive information.
 - Use differential privacy techniques or other data anonymization methods during the LLM’s training process to reduce the risk of overfitting or memorization.
 - Regularly audit and review the LLM’s responses to ensure that sensitive information is not being disclosed inadvertently.
 - Monitor and log LLM interactions to detect and analyze potential data leakage incidents.
+  
 **Example Attack Scenarios:**
 *Scenario #1*: A user inadvertently asks the LLM a question that could reveal sensitive information. The LLM, lacking proper output filtering, responds with the confidential data, exposing it to the user.
 
