@@ -11,3 +11,51 @@ The WhyLabs Platform is custom built to ingest and monitor statistical summaries
 Machine learning engineers and data scientists rely on the platform to monitor ML applications and data pipelines by surfacing and resolving data quality issues, data bias, and concept drift. These capabilities help AI builders reduce model failures, avoid downtime, and ensure customers are getting the best user experience. With out-of-the-box anomaly detection and purpose-built visualizations, WhyLabs eliminates the need for manual troubleshooting and reduces operational costs.
 
 The platform can monitor tabular, image, and text data. It integrates with many popular ML and data tools including Pandas, Apache Spark, AWS Sagemaker, MLflow, Flask, Ray, RAPIDS, Apache Kafka, and more. To learn more about what data types WhyLabs can work with and which tools we integrate with, check out the whylogs [GitHub page](https://github.com/whylabs/whylogs)
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHULtNT5I7-R1TC5WzWNIeoFH5q1OwJoOoig&usqp=CAU)
+
+Large language model (LLM) hallucinations occur when an LLM generates false or fabricated information, such as a response that is factually incorrect, nonsensical, or disconnected from the input prompt. Hallucinations can be caused by a number of factors, including:
+- Vague or insufficient prompts
+- Training data limitations
+- Model biases
+- Language complexity
+- Overfitting
+- Truncation 
+Hallucinations can manifest in various forms, such as sentence contradiction, prompt contradiction, factual contradiction, and irrelevant or random output. For example, if you ask an LLM to write a poem about swimming in green water, it might generate something grammatically correct but nonsensical, like "I went swimming in the green water, The water was so green, I couldn't see my feet, I couldn't see my hand, I couldn't see my head". 
+Hallucinations can be dangerous and impactful, posing risks of misinformation and exposure of confidential data. However, there are some ways to mitigate hallucinations, including:
+**Cleaning up training data**
+If contaminated training data caused the hallucination, you can clean up the data and retrain the model.
+**Controlled generation**
+Provide enough details and constraints in the prompt to the model to limit its freedom to hallucinate.
+**Advanced prompting methods**
+Chain-of-thought prompts can reduce errors or hallucinations by forcing the model to articulate a clear reasoning path. 
+
+**What is an example of a LLM hallucination?**
+Dialogue history-based hallucinations occur when an LLM mixes up names or relations of entities. For example, if the user mentions that their friend John likes hiking, and later says their uncle Mark is coming to visit, the AI might incorrectly link John and Mark together as the same person due to faulty recall.
+
+**How do you stop hallucinations in LLM?**
+You cannot eliminate LLM hallucinations. However, the most effective way to minimize hallucination is outside the LLM itself. Specifically, you can build or use a chatbot that deploys Retrieval Augmented Generation (RAG). RAG provides more context around the question to generate a more relevant and accurate answer.
+
+**What is data leakage in LLM?**
+Description: Data leakage occurs when an LLM accidentally reveals sensitive information, proprietary algorithms, or other confidential details through its responses.
+
+**Description:**
+Data leakage occurs when an LLM accidentally reveals sensitive information, proprietary algorithms, or other confidential details through its responses. This can result in unauthorized access to sensitive data or intellectual property, privacy violations, and other security breaches.
+
+**Common Data Leakage Vulnerabilities:**
+
+- Incomplete or improper filtering of sensitive information in the LLM’s responses.
+- Overfitting or memorization of sensitive data in the LLM’s training process.
+- Unintended disclosure of confidential information due to LLM misinterpretation or errors.
+**How to Prevent:**
+
+- Implement strict output filtering and context-aware mechanisms to prevent the LLM from revealing sensitive information.
+- Use differential privacy techniques or other data anonymization methods during the LLM’s training process to reduce the risk of overfitting or memorization.
+- Regularly audit and review the LLM’s responses to ensure that sensitive information is not being disclosed inadvertently.
+- Monitor and log LLM interactions to detect and analyze potential data leakage incidents.
+**Example Attack Scenarios:**
+*Scenario #1*: A user inadvertently asks the LLM a question that could reveal sensitive information. The LLM, lacking proper output filtering, responds with the confidential data, exposing it to the user.
+
+*Scenario #2*: An attacker deliberately probes the LLM with carefully crafted prompts, attempting to extract sensitive information that the LLM has memorized from its training data.
+
+By understanding and addressing the risks associated with data leakage, developers can better protect their LLM implementations and ensure the safety and security of their systems.
