@@ -1,5 +1,7 @@
 # Quality and Safety for LLM Applications
 
+[Complete](https://learn.deeplearning.ai/accomplishments/d80b73cb-5b57-4c8f-8ed1-a58f7418b937?usp=sharing)
+
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ALdS7LaJcqeycTkyQPAauIIwAHB_D6gNWQ&usqp=CAU)
 
 Data privacy in LLMs pertains to protecting the personal information that may be included in the training datasets or generated in the model's outputs. It involves ensuring that data is anonymized, consent is obtained where necessary, and that the model does not inadvertently reveal sensitive information.
@@ -38,6 +40,10 @@ You cannot eliminate LLM hallucinations. However, the most effective way to mini
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQThAgLJvknsrJMG7v6hTqCWDiJCe-scQ53bw&usqp=CAU)
 
+**What is an LLM refusal?**
+
+Refusals are responses produced by language models when confronted with prompts that are considered to be against the policies set by the model. Such refusals are important safety mechanisms, guarding against misuse of the model.
+
 **What is data leakage in LLM?**
 Description: Data leakage occurs when an LLM accidentally reveals sensitive information, proprietary algorithms, or other confidential details through its responses.
 
@@ -65,6 +71,7 @@ Data leakage occurs when an LLM accidentally reveals sensitive information, prop
 By understanding and addressing the risks associated with data leakage, developers can better protect their LLM implementations and ensure the safety and security of their systems.
 
 ##**How prompt injection attacks work**
+
 At a basic level, a malicious actor could use a prompt injection attack to trick the tool into generating malware or providing other potentially dangerous information that should be restricted.
 
 Prompt injection attacks are widely considered to be the most dangerous of the techniques targeting AI systems.
